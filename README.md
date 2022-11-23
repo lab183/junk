@@ -22,11 +22,17 @@ No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!
 ## Example:
 
 ```
-import "github.com/Lab183/junk"
+package main
+
+import (
+	"fmt"
+
+	"github.com/Lab183/junk"
+)
 
 func main() {
-    response := junk.Junk()
+	response := junk.Junk()
 
-    fmt.Printf("Got Junk? %s\n", response)
+	fmt.Printf("Got Junk? %s\n", response)
 }
 ```
