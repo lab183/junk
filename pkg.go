@@ -6,24 +6,24 @@ import (
 )
 
 type Node struct {
-	data int
-	next *Node
+	Data int
+	Next *Node
 }
 
 func (n *Node) AddNode(data int) {
 	newNode := Node{data, nil}
 	iter := n
-	for iter.next != nil {
-		iter = iter.next
+	for iter.Next != nil {
+		iter = iter.Next
 	}
-	iter.next = &newNode
+	iter.Next = &newNode
 }
 
 func (n *Node) PrintNode() {
 	iter := n
 	for iter != nil {
-		fmt.Println(iter.data)
-		iter = iter.next
+		fmt.Println(iter.Data)
+		iter = iter.Next
 	}
 }
 
